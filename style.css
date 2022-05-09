@@ -23,17 +23,17 @@ body{
 }
 
 .wrap{
-    /* margin: 0 auto; */
+    margin-right: 20px;
     flex: 10;
 }
+
 .wrap h5{
     padding-top: 10px;
 }
 /* card_box 1-2 */
 .card_box{
     display: flex;
-    margin-right: 20px;
-    height: 250px;
+    /* margin-right: 20px; */
 }
 .card_box h5{
     color: var(--Light-grayish-blue);
@@ -44,7 +44,6 @@ body{
 .box_card_B{
     display: flex;
     margin-top: 20px;
-    /* height: 250px; */
 }
 .box_card_B h5{
     color: var(--Light-grayish-blue);
@@ -64,7 +63,7 @@ body{
 
 .card2{
     background-color: var(--Very-dark-grayish-blue);
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 20px;
     font-size: 12px;
     flex: 4;
@@ -86,7 +85,7 @@ body{
 }
 .card4{
     background-color: var(--Very-dark-blackish-blue);
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 20px;
     border-radius: 10px;
     width: 180px;
@@ -169,3 +168,33 @@ body{
     color: var(--Light-gray);
 }
 /* End card1 img section */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .flex-container{ 
+        flex-direction: column;
+    }
+
+    .wrap{
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .float_right {
+        width: 100%;
+    }
+    .card_box, .box_card_B{ 
+        flex-direction: column;
+    }
+
+    .card_box .card1, .card_box .card2, .box_card_B .card3, .box_card_B .card4 {
+        width: 100%;
+        flex: 1;
+        /* margin: 0px 0px 20px 0px; */
+    }
+    .card_box .card1,  .box_card_B .card3 {
+        margin: 0px 0px 20px 0px;
+    }
+}
